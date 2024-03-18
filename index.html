@@ -1,9 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+
+<head>
+  <!-- Meta data section -->
+  <meta charset="utf-8">
+  <meta name="description" content="Calculator for Area and Perimeter of Rectangle, Using Javascript">
+  <meta name="keywords" content="immaculata, icd2o">
+  <meta name="author" content="Atri Sarker">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+  <link rel="manifest" href="./fav_index/site.webmanifest">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Title -->
+  <title>Area & Perimeter of a Rectangle in JS</title>
+</head>
+
+<body>
+
+  <!-- Script -->
+  <script defer src="./js/script.js"></script>
+
+  <!-- Header -->
+  <h1>Area & Perimeter of a Rectangle in JS</h1>
+
+  <!-- Input Fields | Default values of 5 and 3 -->
+  <label for="length">Length (m):</label>
+  <input id="LengthInput" type="number" name="length" value="5" min="0" />
+  <br>
+  <label for="width">Width (m):</label>
+  <input id="WidthInput" type="number" name="width" value="3" min="0" />
+  <br>
+  
+  <!-- Calculate Button -->
+  <button id="CalculateBtn" onclick="Calculate()">Calculate</button>
+
+  <!-- Results -->
+  <p>The Area is <b id="AreaResult"> ? </b> </p>
+  <p>The Perimeter is <b id="PerimeterResult"> ? </b> </p>
+  
+</body>
+
 </html>
